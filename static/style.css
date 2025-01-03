@@ -27,7 +27,7 @@ html,body{
 }
 
 #header .profile h1{
-    font-size: 24px;
+    font-size: 32px;
     margin: 0;
     padding: 0;
     font-weight: 600;
@@ -100,7 +100,7 @@ section#inicio{
 }
 
 section#inicio h2{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 section#inicio span#subtitle{
@@ -229,6 +229,29 @@ i.menu-mobile{
     background: #fff;
  }
 
+ .carousel-control-prev{
+    margin-left: -8rem;
+ }
+
+ .carousel-control-next{
+    margin-right: -8rem;
+ }
+
+ .carousel-indicators{
+    margin-bottom: -35px;
+ }
+
+ @media (max-width: 1860px) {
+    .carousel-control-prev{
+        margin-left: 0;
+     
+    }
+
+    .carousel-control-next{
+        margin-right: 0;
+     
+    }
+ }
 
 
 
