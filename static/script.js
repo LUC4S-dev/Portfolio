@@ -25,3 +25,19 @@ navItem.forEach(e => {
 
     })
 });
+
+// Ativar carregamento no botão ao enviar requisição
+
+const btnEnviar = document.querySelector("#btn-enviar")
+const btnEnviarLoader = document.querySelector("#btn-enviar-loader")
+
+btnEnviar.addEventListener("click", ()=>{
+    btnEnviarLoader.style.display ="block";
+    btnEnviar.style.display = "none"
+})
+
+// Tirar mensagem após 5 segindos
+
+setTimeout(() => {
+   document.querySelector("#alerta").style.display='none';
+}, 5000);
