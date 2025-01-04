@@ -450,7 +450,7 @@
 
           <div class="col-md-7">
             <div class="card p-5 h-100 shadow border-0">
-              <form class="row g-3">
+              <form class="row g-3" action="/send" method="POST">
                 <div class="col-md-6">
                   <label for="email" class="form-label">Nome</label>
                   <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome.">
@@ -461,9 +461,10 @@
                 </div>
                 <div class="col-12">
                   <label for="mensagem" class="form-label">Mensagem</label>
-                  <textarea type="text" class="form-control" id="name" rows="10" placeholder="Digite sua mensagem."></textarea>
+                  <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows="10"
+                    placeholder="Digite sua mensagem."></textarea>
                 </div>
-                
+
                 <div class="col-12 d-flex justify-content-center mt-4">
                   <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </div>

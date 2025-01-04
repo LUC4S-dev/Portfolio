@@ -9,7 +9,7 @@ app.secret_key = "master@465"
 mail_settings = {
     "MAIL_SERVER": "smtp.gmail.com",
     "MAIL_PORT": 465,
-    "MAIL_USE_TLS": True,
+    "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email,
     "MAIL_PASSWORD": senha
 }
@@ -38,8 +38,8 @@ def send():
 
         msg = Message(
             subject= f'{formContato.nome} te envio uma mensagem no portfólio',
-            sender= app.config.ger("MAIL_USERNAME"),
-            recipients=['siqueirabeniciolucas@gmail.com']
+            sender= app.config.get("MAIL_USERNAME"),
+            recipients=['siqueirabeniciolucas@gmail.com', app.config.get("MAIL_USERNAME")],
             body= f'''
             
             {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte 
